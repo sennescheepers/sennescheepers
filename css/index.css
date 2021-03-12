@@ -12,7 +12,7 @@ html, body {
     background-color: #f3f3f3;
 }
 
-/* About */
+/* Pages */
 #pages {
     width: 100%;
     height: 100%;
@@ -23,13 +23,83 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 36pt;
+    align-items: flex-start;
+    flex-direction: column;
 }
+
+/* About */
 
 #about {
     background: bisque;
 }
+
+#about .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about h1 {
+    margin-left: 50px;
+    font-size: 62pt;
+}
+
+#about span {
+    margin-left: 50px;
+    font-size: 18pt;
+}
+
+#about span a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+#about span a:hover {
+    text-decoration: underline;
+}
+
+#about img {
+    height: 90%;
+    border-radius: 50%;
+}
+
+#about p {
+    margin: 70px 50px;
+    font-size: 14pt;
+    width: 60%;
+    line-height: 20pt;
+}
+
+#about #links {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#about #links a {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #575757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: .3s ease-in-out;
+}
+
+#about #links a:hover {
+    background: darkblue;
+}
+
+#about #links a i {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Experience */
 
 #experience {
     background: blue;
