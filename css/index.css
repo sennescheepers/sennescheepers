@@ -34,10 +34,6 @@ body {
 
 /* About */
 
-#about {
-    background: bisque;
-}
-
 #about .header {
     display: flex;
     flex-direction: row;
@@ -111,7 +107,7 @@ body {
 /* Experience */
 
 #experience h1 {
-    margin: 0 0 20px 50px;
+    margin: 0 0 60px 50px;
     font-size: 24pt;
 }
 
@@ -163,7 +159,7 @@ body {
 /* Education */
 
 #education h1 {
-    margin: 0 0 20px 50px;
+    margin: 0 0 60px 50px;
     font-size: 24pt;
 }
 
@@ -201,16 +197,59 @@ body {
 
 /* Skills */
 
-#skills {
-    background: chocolate;
+#skills h1 {
+    margin: 0 0 60px 50px;
+    font-size: 24pt;
 }
 
-#interests {
-    background: crimson;
+#skills h3 {
+    margin: 0 0 20px 50px;
+    font-size: 18pt;
+    color: #535353;
 }
 
-#pages section {
-    background: none;
+#skills #tools {
+    margin: 0 0 40px 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#skills #tools .tool {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #575757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: .3s ease-in-out;
+}
+
+#skills #tools .tool i {
+    font-size: 30px;
+    color: #fff;
+}
+
+#skills #languages {
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18pt;
+    color: #777777;
+}
+
+#skills #languages .level {
+    color: #3316da;
+    margin-left: 20px;
+}
+
+
+/* Interests */
+
+#interests h1 {
+    margin: 0 0 60px 50px;
+    font-size: 24pt;
 }
 
 
