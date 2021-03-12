@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -13,7 +14,9 @@ html, body {
     color: #2b2b2b;
 }
 
+
 /* Pages */
+
 #pages {
     width: 100%;
     height: 100%;
@@ -27,6 +30,7 @@ html, body {
     align-items: flex-start;
     flex-direction: column;
 }
+
 
 /* About */
 
@@ -103,6 +107,7 @@ html, body {
     color: #fff;
 }
 
+
 /* Experience */
 
 #experience {
@@ -158,6 +163,7 @@ html, body {
     text-decoration: underline;
 }
 
+
 /* Education */
 
 #eductaion {
@@ -174,4 +180,103 @@ html, body {
 
 #pages section {
     background: none;
+}
+
+
+/* Navigation */
+
+
+/*easy scroll dots - codepenVersion*/
+
+.scroll-indicator-controller {
+    position: fixed;
+    top: 50vh;
+    transform: translate(0, -50%);
+    right: 20px;
+    z-index: 999;
+}
+
+@media (max-width: 1024px) {
+    .scroll-indicator-controller {
+        right: 10px;
+    }
+}
+
+.scroll-indicator-controller>div {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #3316da;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    will-change: transition;
+}
+
+.scroll-indicator-controller>div span {
+    color: #3316da;
+    position: absolute;
+    right: calc(100% + 8px);
+    white-space: nowrap;
+    top: -4px;
+    font-size: 16px;
+    line-height: 17px;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.4s ease;
+    will-change: transition;
+    color: #777777;
+    font-weight: 300;
+}
+
+.scroll-indicator-controller>div span:after {
+    content: "-----";
+    padding-left: 5px;
+    letter-spacing: -3px;
+    vertical-align: text-top;
+    font-weight: 400;
+}
+
+@media (hover: hover) {
+    .scroll-indicator-controller>div:hover span {
+        width: auto;
+        opacity: 1;
+        overflow: visible;
+        transform: translateX(0px);
+    }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .scroll-indicator-controller>div:hover span {
+        width: auto;
+        opacity: 1;
+        overflow: visible;
+        transform: translateX(0px);
+    }
+}
+
+@media (hover: none) {
+    .scroll-indicator-controller>div span {
+        display: none;
+    }
+}
+
+.scroll-indicator-controller.indi-mobile>div span {
+    display: none;
+}
+
+.scroll-indicator-controller>div.active {
+    background: #3316da;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+@supports (-ms-ime-align:auto) {
+    .scroll-indicator-controller>div span {
+        transition: opacity 0.4s ease;
+    }
 }
