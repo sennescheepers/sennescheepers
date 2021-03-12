@@ -42,12 +42,13 @@ body {
 }
 
 #about h1 {
-    margin-left: 50px;
+    margin: 0 50px;
+    margin-right: 70px;
     font-size: 62pt;
 }
 
 #about span {
-    margin-left: 50px;
+    margin: 0 -50px 0 50px;
     font-size: 18pt;
     color: #535353;
 }
@@ -253,7 +254,7 @@ body {
 }
 
 #interests p {
-    margin: 0 0 40px 50px;
+    margin: 0 0 0 50px;
     width: 70%;
     font-family: 'Roboto', sans-serif;
     line-height: 18pt;
@@ -261,7 +262,131 @@ body {
 }
 
 
-/*easy scroll dots - navigation*/
+/* Media queries */
+
+@media (max-width:1050px) {
+    #about h1 {
+        margin: 0 50px;
+    }
+    #about span {
+        font-size: 14pt;
+    }
+    #about span:last-child {
+        margin-right: 50px;
+    }
+    #about img {
+        display: none;
+    }
+    #experience .experience,
+    #education .education,
+    #interests p {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width:850px) {
+    #about p {
+        width: calc(100% - 100px);
+    }
+    #experience .experience .text,
+    #education .education .text {
+        width: 100%;
+    }
+    #skills #tools {
+        width: calc(100% - 100px);
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    #skills #tools .tool {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    #experience h3,
+    #education h3 {
+        display: block;
+    }
+    #experience span.date,
+    #education span.date {
+        float: none;
+    }
+}
+
+@media (max-width: 530px) {
+    #about .header .text h1 {
+        font-size: 40pt;
+        margin: 0 25px;
+    }
+    #about .header .text span {
+        margin: 0 -25px 0 25px;
+    }
+    #about p {
+        margin: 70px 25px;
+    }
+    #about #links {
+        margin: 0 25px;
+    }
+    #experience h1,
+    #education h1,
+    #skills h1,
+    #interests h1 {
+        margin-left: 25px;
+    }
+    #experience .experience,
+    #education .education {
+        margin: 20px 25px;
+        width: calc(100% - 50px);
+    }
+    #skills h3 {
+        margin: 0 0 20px 25px;
+    }
+    #skills #tools {
+        justify-content: space-evenly;
+        margin-left: 25px;
+        width: calc(100% - 50px);
+    }
+    #skills #languages {
+        margin-left: 25px;
+    }
+    #interests p {
+        margin-left: 25px;
+        width: calc(100% - 50px);
+    }
+}
+
+@media (max-width:450px) {
+    #about .header .text h1 {
+        font-size: 26pt;
+    }
+    #about .header .text span {
+        font-size: 12pt;
+    }
+    #about p {
+        font-size: 11pt;
+    }
+    #experience h1,
+    #education h1,
+    #skills h1,
+    #interests h1 {
+        font-size: 18pt;
+    }
+    #experience .experience h3,
+    #education .education h3 {
+        font-size: 15pt;
+    }
+    #experience .experience span.date,
+    #education .education span.date {
+        font-size: 11pt;
+    }
+    #experience .experience p.subtitle,
+    #education .education p.subtitle {
+        font-size: 12pt;
+    }
+}
+
+
+/*easy scroll dots - navigation - no touchy */
 
 .scroll-indicator-controller {
     position: fixed;
