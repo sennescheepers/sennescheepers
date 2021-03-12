@@ -110,10 +110,6 @@ body {
 
 /* Experience */
 
-#experience {
-    background: green;
-}
-
 #experience h1 {
     margin: 0 0 20px 50px;
     font-size: 24pt;
@@ -166,9 +162,44 @@ body {
 
 /* Education */
 
-#eductaion {
-    background: chartreuse;
+#education h1 {
+    margin: 0 0 20px 50px;
+    font-size: 24pt;
 }
+
+#education .education {
+    width: 70%;
+    margin: 20px 50px;
+}
+
+#education h3 {
+    display: inline-block;
+    font-size: 18pt;
+}
+
+#education .date {
+    float: right;
+    color: #3316da;
+}
+
+#education .subtitle {
+    color: #535353;
+    font-size: 14pt;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+#education .text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 18pt;
+    color: #777777;
+    margin: 10px 0;
+    display: inline-block;
+    width: 85%;
+}
+
+
+/* Skills */
 
 #skills {
     background: chocolate;
