@@ -252,11 +252,16 @@ body {
     font-size: 24pt;
 }
 
+#interests p {
+    margin: 0 0 40px 50px;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18pt;
+    color: #777777;
+}
 
-/* Navigation */
 
-
-/*easy scroll dots - codepenVersion*/
+/*easy scroll dots - navigation*/
 
 .scroll-indicator-controller {
     position: fixed;
