@@ -24,10 +24,19 @@
             <div class="scroll-indicator" id="section01" data-scroll-indicator-title="About"></div>
         </div>
         <section id="about">
+            <div class="select" style="width: 80px;">
+                <select name="language-picker-select" id="language-picker-select">
+                    <option value="0">0</option>
+                    <option lang="en" value="english" selected>🇬🇧</option>
+                    <option lang="nl" value="nederlands">🇳🇱</option>
+                    <option lang="fr" value="francais">🇫🇷</option>
+                    <option lang="de" value="deutsch">🇩🇪</option>
+                </select>
+            </div>
             <div class="header">
                 <div class="text">
                     <h1>Senne Scheepers</h1>
-                    <span>Limburg, Belgium</span>
+                    <span id="location">Limburg, Belgium</span>
                     <span> - </span>
                     <span>(+32)472 94 26 89</span>
                     <span> - </span>
@@ -35,7 +44,7 @@
                 </div>
                 <img src="./assets/picture.jpg" alt="Senne Scheepers">
             </div>
-            <p>
+            <p id="summary">
                 I'm a student at PXL University, studying Artificial Intelligence & Robotics. I've got a passion for programming and problem solving, and I'd be happy to turn this into my job.
             </p>
             <div id="links">
@@ -153,13 +162,15 @@
         <section id="interests">
             <h1>Interests</h1>
             <p>
-                When I'm not working for school you can find me riding my bike or putting on my running shoes, I'll take every chance to go outside and be active. Apart from being active I enjoy learning new technologies and building my knowledge with side-projects.
+                When I'm not working for school you can find me riding my bike or putting on my running shoes, I'll take every chance to go outside and be active. Apart from being active I enjoy learning new technologies and building my knowledge with side projects.
             </p>
         </section>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/scrollDots.js"></script>
+    <script src="js/locale.js"></script>
+    <script src="js/select.js"></script>
 </body>
 
 </html>
