@@ -431,6 +431,9 @@ body {
 }
 
 @media (max-width:450px) {
+    #about .select {
+        display: none;
+    }
     #about .header .text h1 {
         font-size: 26pt;
     }
