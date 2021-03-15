@@ -12,6 +12,7 @@ const setEnglish = () => {
 
     // About page
     document.getElementById("location").innerHTML = "Limburg, Belgium";
+    document.getElementById("summary").innerHTML = "I'm a student at PXL University College, studying Artificial Intelligence & Robotics. I've got a passion for programming and problem solving, and I'd be happy to turn this into my job."
 
     // Experience page
     document.getElementById("experience-title").innerHTML = "Experience";
@@ -27,7 +28,7 @@ const setEnglish = () => {
 
     // Education page
     document.getElementById("education-title").innerHTML = "Education";
-    document.getElementById("edu-1-school").innerHTML = "PXL University, Hasselt";
+    document.getElementById("edu-1-school").innerHTML = "PXL University College, Hasselt";
     document.getElementById("edu-1-date").innerHTML = "September 2019 - June 2022";
     document.getElementById("edu-1-subtitle").innerHTML = "BACHELOR OF APPLIED INFORMATION TECHNOLOGY";
     document.getElementById("edu-1-text").innerHTML = "Application development - Artificial Intelligence & Robotics";
@@ -71,13 +72,13 @@ const setDutch = () => {
     // Experience page
     document.getElementById("experience-title").innerHTML = "Ervaring";
     document.getElementById("exp-1-title").innerHTML = "Garmin smartwatch wijzerplaat";
-    document.getElementById("exp-1-date").innerHTML = "september 2020 - Heden";
+    document.getElementById("exp-1-date").innerHTML = "september 2020 - heden";
     document.getElementById("exp-1-subtitle").innerHTML = "SIDE PROJECT";
     document.getElementById("exp-1-text").childNodes[0].nodeValue = "Ontwikkeling en deployment van een wijzerplaat voor Garmin sporthorloges. Geleerd hoe om te gaan met feedback van gebruikers en testers om de code zo optimaal mogelijk te laten lopen en de gebruikerservaring beter te maken.";
     document.getElementById("exp-1-li-1").childNodes[2].nodeValue = " met 35 reviews";
     document.getElementById("exp-1-li-2").innerHTML = "5500+ downloads";
     document.getElementById("exp-2-title").innerHTML = "Studentenjob";
-    document.getElementById("exp-2-date").innerHTML = "2017 - Heden";
+    document.getElementById("exp-2-date").innerHTML = "2017 - heden";
     document.getElementById("exp-2-text").innerHTML = "Geleerd hoe te werken in een multicultureel team, sociale vaardigheden in een professionele omgeving en een goede werkethiek uitgebouwd.";
 
     // Education page
@@ -105,15 +106,13 @@ const setDutch = () => {
 
     // Interests page
     document.getElementById("interests-title").innerHTML = "Interesses";
-    document.getElementById("interests-text").innerHTML = "Wanneer ik niet voor school werk ben ik te vinden op mijn fiets of in mijn loopschoenen, ik zal iedere kans om actief bezig of buiten te zijn met beide handen grijpen. Buiten sporten leer ik ook graag nieuwe technologiën en werk ik graag aan side projects.";
+    document.getElementById("interests-text").innerHTML = "Wanneer ik niet voor school werk ben ik te vinden op mijn fiets of in mijn loopschoenen, ik zal iedere kans om actief bezig of buiten te zijn met beide handen grijpen. Buiten sporten leer ik ook graag nieuwe technologieën en werk ik graag aan side projects.";
 
 };
 
 const setFrench = () => {
     console.log('traduire en francais');
-
-    // Navigation dots
-    document.getElementById("section01").setAttribute("data-scroll-indicator-title", "A propos");
+    ich gerne
     document.getElementById("section02").setAttribute("data-scroll-indicator-title", "Expérience");
     document.getElementById("section03").setAttribute("data-scroll-indicator-title", "Éducation");
     document.getElementById("section04").setAttribute("data-scroll-indicator-title", "Compétences");
@@ -137,6 +136,47 @@ const setGerman = () => {
     // About page
     document.getElementById("location").innerHTML = "Limburg, Belgien";
     document.getElementById("summary").innerHTML = "Ich bin ein Schüler an Fachhochschule PXL, ich studiere Informatik mit ein Spezialisierung auf Artificial Intelligence & Robotics. Programmieren und Problemlösen bereiten mir große Freude und ich bin froh, meine Leidenschaft zum Beruf machen zu können."
+
+    // Experience page
+    document.getElementById("experience-title").innerHTML = "Arbeitserfahrung";
+    document.getElementById("exp-1-title").innerHTML = "Garmin smartwatch Zifferblatt";
+    document.getElementById("exp-1-date").innerHTML = "September 2020 - jetzt";
+    document.getElementById("exp-1-subtitle").innerHTML = "NEBENPROJEKT";
+    document.getElementById("exp-1-text").childNodes[0].nodeValue = "Entwickelung und Bereitstellung eines Zifferblatts für Garmin Sportuhren. Gelernt wie man umgeht mit Feedback von Testern un Benutzern um das Benutzerlebnis so angenehm wie möglich zu gestalten.";
+    document.getElementById("exp-1-li-1").childNodes[2].nodeValue = " mit 35 Bewertungen";
+    document.getElementById("exp-1-li-2").innerHTML = "5500+ Downloads";
+    document.getElementById("exp-2-title").innerHTML = "Studentenjob";
+    document.getElementById("exp-2-date").innerHTML = "2017 - jetzt";
+    document.getElementById("exp-2-text").innerHTML = "Gelernt zu arbeiten in einem multikulturelles Team, soziale Kompetenzen in einem professionellen Umfeld und einer guten Arbeitsmoral entwickelt.";
+
+    // Education page
+    document.getElementById("education-title").innerHTML = "Bildung";
+    document.getElementById("edu-1-school").innerHTML = "Fachhochschule PXL, Hasselt";
+    document.getElementById("edu-1-date").innerHTML = "September 2019 - Juni 2022";
+    document.getElementById("edu-1-subtitle").innerHTML = "INFORMATIK";
+    document.getElementById("edu-1-text").innerHTML = "Application development - Artificial Intelligence & Robotics";
+    document.getElementById("edu-2-school").innerHTML = "Heilig-Grafinstituut, Bilzen";
+    document.getElementById("edu-2-date").innerHTML = "September 2015 - Juni 2019";
+    document.getElementById("edu-2-subtitle").innerHTML = "WISSENSCHAFTEN & MODERNE SPRACHEN";
+
+    // Skills page
+    document.getElementById("skills-title").innerHTML = "Kompetenzen";
+    document.getElementById("programming-languages").innerHTML = "Programmiersprachen & Tools";
+    document.getElementById("languages").innerHTML = "Sprachen";
+    document.getElementById("lan-1").innerHTML = "Niederländisch";
+    document.getElementById("lan-1-level").innerHTML = "Muttersprache";
+    document.getElementById("lan-2").innerHTML = "Englisch";
+    document.getElementById("lan-2-level").innerHTML = "Fachkundige Kenntnisse";
+    document.getElementById("lan-3").innerHTML = "Französisch";
+    document.getElementById("lan-3-level").innerHTML = "Selbständige Sprachverwendung";
+    document.getElementById("lan-4").innerHTML = "Deutsch";
+    document.getElementById("lan-4-level").innerHTML = "Grundkenntnisse";
+
+    // Interests page
+    document.getElementById("interests-title").innerHTML = "Interessen";
+    document.getElementById("interests-text").innerHTML = "Wenn ich nicht für die Schule arbeite, kannst du mich auf meinem Fahrrad oder in meinem Laufschuhen finden. Ich werde jede Chance um aktiv zu sein nutzen. Neben dem Sport lerne ich auch gerne neue Technologien und arbeite an Nebenprojekten.";
+
+
 };
 
 const handleLanguage = (e) => {
