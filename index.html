@@ -24,6 +24,14 @@
             <div class="scroll-indicator" id="section01" data-scroll-indicator-title="About"></div>
         </div>
         <section id="about">
+            <div class="select">
+                <select name="language-picker-select" id="language-picker-select">
+                    <option lang="en" value="english" selected>🇬🇧</option>
+                    <option lang="nl" value="nederlands">🇳🇱</option>
+                    <option lang="fr" value="francais">🇫🇷</option>
+                    <option lang="de" value="deutsch">🇩🇪</option>
+                </select>
+            </div>
             <div class="header">
                 <div class="text">
                     <h1>Senne Scheepers</h1>
@@ -36,7 +44,7 @@
                 <img src="./assets/picture.jpg" alt="Senne Scheepers">
             </div>
             <p id="summary">
-                I'm a student at PXL University, studying Artificial Intelligence & Robotics. I've got a passion for programming and problem solving, and I'd be happy to turn this into my job.
+                I'm a student at PXL University College, studying Artificial Intelligence & Robotics. I've got a passion for programming and problem solving, and I'd be happy to turn this into my job.
             </p>
             <div id="links">
                 <a href="https://github.com/sennescheepers" target="_blank"><i class="fab fa-github"></i></a>
@@ -49,25 +57,25 @@
             <div class="scroll-indicator" id="section02" data-scroll-indicator-title="Experience"></div>
         </div>
         <section id="experience">
-            <h1>EXPERIENCE</h1>
+            <h1 id="experience-title">Experience</h1>
             <article class="experience">
-                <h3>Garmin smartwatch watchface</h3>
-                <span class="date">September 2020 - Present</span>
-                <p class="subtitle">SIDE PROJECT</p>
-                <p class="text">
+                <h3 id="exp-1-title">Garmin smartwatch watchface</h3>
+                <span id="exp-1-date" class="date">September 2020 - Present</span>
+                <p id="exp-1-subtitle" class="subtitle">SIDE PROJECT</p>
+                <p id="exp-1-text" class="text">
                     Developped and deployed a watchface for Garmin smartwatches. Learned how to use feedback from users and testers to make the code run as optimal as possible and to make the user experience better.
                     <ul class="list">
-                        <li>4.5/5 <i class="fas fa-star"></i> with 35 reviews</li>
-                        <li>5500+ downloads</li>
+                        <li id="exp-1-li-1">4.5/5 <i class="fas fa-star"></i> with 35 reviews</li>
+                        <li id="exp-1-li-2">5500+ downloads</li>
                         <li><a href="https://apps.garmin.com/nl-NL/apps/6eda8a23-2dc6-41f1-b3f8-45622f2d4570" target="_blank">Connect IQ</a></li>
                     </ul>
                 </p>
             </article>
             <article class="experience">
-                <h3>Studentjob</h3>
-                <span class="date">2017 - Present</span>
+                <h3 id="exp-2-title">Studentjob</h3>
+                <span id="exp-2-date" class="date">2017 - Present</span>
                 <p class="subtitle">ALRO GROUP</p>
-                <p class="text">
+                <p id="exp-2-text" class="text">
                     Learned how to work in a multicultural team and a professional environment. Developed professional social skills and a good work ethic.
                 </p>
             </article>
@@ -77,17 +85,17 @@
             <div class="scroll-indicator" id="section03" data-scroll-indicator-title="Education"></div>
         </div>
         <section id="education">
-            <h1>EDUCATION</h1>
+            <h1 id="education-title">Education</h1>
             <article class="education">
-                <h3>PXL University, Hasselt</h3>
-                <span class="date">September 2019 - June 2022</span>
-                <p class="subtitle">BACHELOR OF APPLIED INFORMATION TECHNOLOGY</p>
-                <span class="text">Application development - Artificial Intelligence & Robotics</span>
+                <h3 id="edu-1-school">PXL University College, Hasselt</h3>
+                <span id="edu-1-date" class="date">September 2019 - June 2022</span>
+                <p id="edu-1-subtitle" class="subtitle">BACHELOR OF APPLIED INFORMATION TECHNOLOGY</p>
+                <span id="edu-1-text" class="text">Application development - Artificial Intelligence & Robotics</span>
             </article>
             <article class="education">
-                <h3>Heilig-Grafinstituut, Bilzen</h3>
-                <span class="date">September 2015 - June 2019</span>
-                <p class="subtitle">SCIENCES & MODERN LANGUAGES</p>
+                <h3 id="edu-2-school">Heilig-Grafinstituut, Bilzen</h3>
+                <span id="edu-2-date" class="date">September 2015 - June 2019</span>
+                <p id="edu-2-subtitle" class="subtitle">SCIENCES & MODERN LANGUAGES</p>
             </article>
         </section>
         <!-- HERE'S AN ANCHOR POINT (SCROLL INDICATOR) -->
@@ -95,8 +103,8 @@
             <div class="scroll-indicator" id="section04" data-scroll-indicator-title="Skills"></div>
         </div>
         <section id="skills">
-            <h1>Skills</h1>
-            <h3>Programming languages & tools</h3>
+            <h1 id="skills-title">Skills</h1>
+            <h3 id="programming-languages">Programming languages & Tools</h3>
             <div id="tools">
                 <div class="tool">
                     <i class="fab fa-html5"></i>
@@ -126,23 +134,23 @@
                     <i class="fab fa-docker"></i>
                 </div>
             </div>
-            <h3>Languages</h3>
+            <h3 id="languages">Languages</h3>
             <table id="languages">
                 <tr>
-                    <td><span>Dutch</span></td>
-                    <td><span class="level">Native</span></td>
+                    <td><span id="lan-1">Dutch</span></td>
+                    <td><span id="lan-1-level" class="level">Native</span></td>
                 </tr>
                 <tr>
-                    <td><span>English</span></td>
-                    <td><span class="level">Professional</span></td>
+                    <td><span id="lan-2">English</span></td>
+                    <td><span id="lan-2-level" class="level">Professional</span></td>
                 </tr>
                 <tr>
-                    <td><span>French</span></td>
-                    <td><span class="level">Conversational</span></td>
+                    <td><span id="lan-3">French</span></td>
+                    <td><span id="lan-3-level" class="level">Conversational</span></td>
                 </tr>
                 <tr>
-                    <td><span>German</span></td>
-                    <td><span class="level">Basic</span></td>
+                    <td><span id="lan-4">German</span></td>
+                    <td><span id="lan-4-level" class="level">Basic</span></td>
                 </tr>
             </table>
         </section>
@@ -151,8 +159,8 @@
             <div class="scroll-indicator" id="section05" data-scroll-indicator-title="Interests"></div>
         </div>
         <section id="interests">
-            <h1>Interests</h1>
-            <p>
+            <h1 id="interests-title">Interests</h1>
+            <p id="interests-text">
                 When I'm not working for school you can find me riding my bike or putting on my running shoes, I'll take every chance to go outside and be active. Apart from being active I enjoy learning new technologies and building my knowledge with side projects.
             </p>
         </section>
@@ -161,7 +169,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/scrollDots.js"></script>
     <script src="js/locale.js"></script>
-    <script src="js/select.js"></script>
 </body>
 
 </html>
