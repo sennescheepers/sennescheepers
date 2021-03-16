@@ -112,7 +112,7 @@ const setDutch = () => {
 
 const setFrench = () => {
     console.log('traduire en francais');
-    ich gerne
+
     document.getElementById("section02").setAttribute("data-scroll-indicator-title", "Expérience");
     document.getElementById("section03").setAttribute("data-scroll-indicator-title", "Éducation");
     document.getElementById("section04").setAttribute("data-scroll-indicator-title", "Compétences");
@@ -120,7 +120,47 @@ const setFrench = () => {
 
     // About page 
     document.getElementById("location").innerHTML = "Limbourg, Belgique";
-    document.getElementById("summary").innerHTML = "Je suis étudiant à Haute Ècole PXL, j'étudie l'intelligence artificielle et la robotique. La programmation et la résolution de problèmes me procurent une grande satisfaction, je suis heureux de faire de ma passion mon métier."
+    document.getElementById("summary").innerHTML = "Je suis étudiant à Haute École PXL, j'étudie l'intelligence artificielle et la robotique. La programmation et la résolution de problèmes me procurent une grande satisfaction, je suis heureux de faire de ma passion mon métier."
+
+    // Experience page
+    document.getElementById("experience-title").innerHTML = "Expérience";
+    document.getElementById("exp-1-title").innerHTML = "Garmin smartwatch wijzerplaat";
+    document.getElementById("exp-1-date").innerHTML = "septembre 2020 - présent";
+    document.getElementById("exp-1-subtitle").innerHTML = "PROJET PARALLÈLE";
+    document.getElementById("exp-1-text").childNodes[0].nodeValue = "Développement et déploiement d'un cadran pour les montres de sport Garmin. Appris à gérer les commentaires des testeurs et des utilisateurs pour optimiser le code et l'expérience utilisateur.";
+    document.getElementById("exp-1-li-1").childNodes[2].nodeValue = " avec 35 avis";
+    document.getElementById("exp-1-li-2").innerHTML = "5500+ téléchargements";
+    document.getElementById("exp-2-title").innerHTML = "Studentenjob";
+    document.getElementById("exp-2-date").innerHTML = "2017 - présent";
+    document.getElementById("exp-2-text").innerHTML = "Appris  travialler dans une équipe multiculturelle, développé des compétences sociales dans un environnement professionnel et une bonne éthique de travail.";
+
+    // Education page
+    document.getElementById("education-title").innerHTML = "Éducation";
+    document.getElementById("edu-1-school").innerHTML = "Haute École PXL, Hasselt";
+    document.getElementById("edu-1-date").innerHTML = "septembre 2019 - juin 2022";
+    document.getElementById("edu-1-subtitle").innerHTML = "INFORMATIQUE";
+    document.getElementById("edu-1-text").innerHTML = "Application development - Artificial Intelligence & Robotics";
+    document.getElementById("edu-2-school").innerHTML = "Heilig-Grafinstituut, Bilzen";
+    document.getElementById("edu-2-date").innerHTML = "september 2015 - juni 2019";
+    document.getElementById("edu-2-subtitle").innerHTML = "SCIENCES & LANGUES MODERNES";
+
+    // Skills page
+    document.getElementById("skills-title").innerHTML = "Compétences";
+    document.getElementById("programming-languages").innerHTML = "Langues de programmations & Tools";
+    document.getElementById("languages").innerHTML = "Langues";
+    document.getElementById("lan-1").innerHTML = "Néerlandais";
+    document.getElementById("lan-1-level").innerHTML = "Langue maternelle";
+    document.getElementById("lan-2").innerHTML = "Anglais";
+    document.getElementById("lan-2-level").innerHTML = "Professionnel";
+    document.getElementById("lan-3").innerHTML = "Français";
+    document.getElementById("lan-3-level").innerHTML = "Conversationnelle";
+    document.getElementById("lan-4").innerHTML = "Allemand";
+    document.getElementById("lan-4-level").innerHTML = "Base";
+
+    // Interests page
+    document.getElementById("interests-title").innerHTML = "Intérêts";
+    document.getElementById("interests-text").innerHTML = "Quand je ne travaille pas pour l'école tu me trouveras sur mon vélo ou sur mes chaussures de course, je profiterai de chaque occasion pour être actif. Au dehors de sport, j'aime aussi apprendre les nouvelles technologies et j'aime travailler sur de projets parallèlles.";
+
 };
 
 const setGerman = () => {
